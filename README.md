@@ -1,11 +1,16 @@
-<div align="center">
+# GainiRen
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A gamified task, quest management, and financial rewards web application built with React, TypeScript, Tailwind CSS, and Supabase integration.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Hub & Dashboard**: Daily streak bonuses, energy meters, level XP bars, and active missions.
+- **Mystery Vaults**: Interactive chest opening mechanism with randomized coin loot and celebratory confetti effects.
+- **Quest & Bounty Explorer**: Categorized and searchable task board with filter pills, difficulty tiers, and custom goal creation.
+- **Vault Wallet**: Balances, real-time transaction ledger, currency conversions, and automated cashout simulator (PayPal, Crypto, Gift Cards).
+- **Profile & Level Progression**: Customizable player identity, referral invite code generator, and rank milestones.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Setup & Running
+```bash
+npm install
+npm run dev
+```

@@ -1,0 +1,6 @@
+{
+  "name": "DeSiaVe",
+  "description": "A gamified productivity, quest management, and financial rewards web application with interactive task lists, loot chests, and progress tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

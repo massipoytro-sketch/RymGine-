@@ -1,0 +1,102 @@
+/* DeSiaVe Gainiren Core Styling & Custom Properties */
+:root {
+  --gx-bg-primary: #090d16;
+  --gx-bg-surface: #111827;
+  --gx-bg-card: rgba(17, 24, 39, 0.85);
+  --gx-border: rgba(255, 255, 255, 0.08);
+  --gx-border-gold: rgba(245, 158, 11, 0.35);
+  --gx-gold: #f59e0b;
+  --gx-gold-light: #fbbf24;
+  --gx-emerald: #10b981;
+  --gx-cyan: #06b6d4;
+  --gx-purple: #a855f7;
+  --gx-rose: #f43f5e;
+  --gx-text-primary: #f8fafc;
+  --gx-text-muted: #94a3b8;
+}
+
+body {
+  background-color: var(--gx-bg-primary);
+  color: var(--gx-text-primary);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Glassmorphism surfaces */
+.gx-glass {
+  background: var(--gx-bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--gx-border);
+}
+
+.gx-glass-gold {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(17, 24, 39, 0.8) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--gx-border-gold);
+}
+
+/* Custom glow shadows */
+.gx-glow-gold {
+  box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.25);
+}
+
+.gx-glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.25);
+}
+
+.gx-glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.25);
+}
+
+/* Shimmer animation */
+@keyframes gx-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gx-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: gx-shimmer 2.5s infinite;
+}
+
+/* Pulse animation for quest alerts */
+@keyframes gx-pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.gx-pulse {
+  animation: gx-pulse-ring 2s infinite ease-in-out;
+}
+
+/* Scrollbar hide utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
